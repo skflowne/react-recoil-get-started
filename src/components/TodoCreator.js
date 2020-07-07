@@ -18,15 +18,23 @@ const TodoCreator = (props) => {
                 },
             ]
         })
+        setInputVal("")
     }
 
     const onChange = (e) => {
         setInputVal(e.target.value)
     }
 
+    const onKeyPress = (e) => {
+        console.log("keypress", e)
+        if (e.key === "Enter") {
+            addTodo()
+        }
+    }
+
     return (
         <div>
-            <input type="text" value={inputVal} onChange={onChange} />
+            <input type="text" value={inputVal} onChange={onChange} onKeyPress={onKeyPress} />
             <button onClick={addTodo}>Add</button>
         </div>
     )
