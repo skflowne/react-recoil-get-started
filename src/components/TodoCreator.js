@@ -1,14 +1,14 @@
 import React, { useState } from "react"
 import { useSetRecoilState } from "recoil"
-import todoState from "../state/todos"
+import { todoList } from "../state/todos"
 
 const TodoCreator = (props) => {
     const [inputVal, setInputVal] = useState("")
 
-    const setTodoList = useSetRecoilState(todoState.list)
+    const setTodos = useSetRecoilState(todoList)
 
     const addTodo = () => {
-        setTodoList((old) => {
+        setTodos((old) => {
             return [
                 ...old,
                 {
