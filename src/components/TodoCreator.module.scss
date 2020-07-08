@@ -1,0 +1,41 @@
+.root {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+
+    input {
+        display: flex;
+        flex: 1 1 90%;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        outline: none;
+        padding: 1rem;
+    }
+
+    button {
+        display: flex;
+        flex: 0 1 10%;
+        margin-left: 1rem;
+        align-self: stretch;
+        align-items: center;
+        justify-content: center;
+        background: #495867;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        color: #5cad77;
+        font-size: 1.4rem;
+        padding: 0 2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:hover {
+            background: #5cad77;
+            color: #495867;
+        }
+    }
+}

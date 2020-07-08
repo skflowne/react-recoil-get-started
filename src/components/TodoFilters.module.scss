@@ -1,0 +1,29 @@
+.filters {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: 0.5rem;
+
+    > div {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin-left: 0.5rem;
+
+        > div {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            margin: 0 0.5rem;
+
+            label {
+                padding-left: 0.25rem;
+            }
+
+            label,
+            input {
+                cursor: pointer;
+            }
+        }
+    }
+}

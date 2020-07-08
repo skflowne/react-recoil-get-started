@@ -1,0 +1,36 @@
+.root {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 100px;
+    top: -50px;
+    left: -2rem;
+
+    > div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-between;
+        align-self: stretch;
+        flex: 0 0 10rem;
+        height: 100%;
+        background: #495867;
+        margin: 0 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0.25rem;
+
+        > label {
+            color: #5cad77;
+            font-size: 1.4rem;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+
+        > span {
+            color: #c18c5d;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react"
 import { todoList } from "../state/todos"
 import { useRecoilState } from "recoil"
+import styles from "./TodoItem.module.scss"
 
 const TodoItem = (props) => {
     const { todo } = props
@@ -35,7 +36,7 @@ const TodoItem = (props) => {
     }
 
     return (
-        <div className="todoItem">
+        <div className={styles.root}>
             <input type="text" value={todo.text} onChange={updateTodo} />
             <input type="checkbox" checked={todo.isComplete} onChange={toggleTodoCompletion} />
             <button onClick={deleteTodo}>X</button>
